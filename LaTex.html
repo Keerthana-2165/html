@@ -1,0 +1,72 @@
+\documentclass{knittingpattern}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{xskak}
+\definecolor{colour0}{HTML}{000000}
+\definecolor{colour5}{HTML}{CCFFCC}
+\definecolor{colour2}{HTML}{97DE76}
+\definecolor{colour3}{HTML}{99CCFF}
+\definecolor{colour4}{HTML}{EDB668}
+\title{LaTeX Assignment-1}
+\author{S.keerthana}
+\date{August 2022}
+\begin{document}
+\section{contents}
+\subsection{Knitting Patterns}
+\subsection{Chess Notation}
+\subsection{Chemistry}
+\subsubsection{Chemical Formulae}
+\subsubsection{Molecular Orbital Diagrams}
+\subsection{Electrical Circuits}
+\subsection{Typesetting exam}
+This is an assignment. We are not sharing the source code for this document- you’ll have to look
+up the titles of each section (Overleaf is a great source), and try to replicate the features we
+demonstrate the best you can.
+Don’t forget to give yours ID when you submit the .file !
+We recommend you attempt this assignment in the online Overleaf editor for the most
+convenient workflow. The MacTeX distribution has all packages installed.
+Some of the packages might give you troubles in your offline LATEX distribution, if so, you can
+switch over to Overleaf.
+Your submission should contain a zip containing
+\newpage
+\section{Knitting Patterns}
+This class provides a very convenient way to introduce boxed diagrams. We are thus going to use our stock image a few more times. Also, it has a few features to make knitting instructions more readable, however, we can adapt them to make.
+\vspace{1cm}
+    \centering
+    
+    \frame{\includegraphics {index1.png} }
+\important{colour0}{colour4}{We have a way of highlighting important text, or as was originally intended, important
+instructions. Feel free to choose whatever background and border colour you like when
+you replicate these features, but try to replicate the dimensions as well as you can.}
+\begin{pattern}{colour3}{colour5}
+Course & Credits\\
+Introduction to Computer Programming & 6\\
+Abstractions and Paradigms in Programming & 6\\
+Abstractions and Paradigms in Programming Lab & 3 \\
+Data Structure and Algorithms & 6\\
+Software Systems Lab & 8\\
+\end{pattern}
+\note{colour0}{colour3}{Note}{This is a note. The above feature was introduced to typeset a sequence of knitting instructions.
+ The first column is for the instruction, the second for the number of stitches.
+ But hey, it looks
+cool!}
+\newcommand{\introleft}[3][.25]{\begin{tabular}{m{#1\textwidth}m{\textwidth - 4\tabcolsep
+- #1\textwidth}}
+\fbox{\includegraphics[width=#1\textwidth]{#2}}&#3
+\end{tabular}}
+\introleft{index1.png}{Look at the adjoining graph. Yes, you’ve seen it before. This
+time, it is side by side with a paragraph! And there’s a beau-
+tiful box around it! By default, this will be a quarter of the
+width of the page. If you follow the hint that is the title of
+this section, you won’t have to type in cumbersome code to
+fit in images. Also, have you noticed that the pages are much
+wider? A lot of it will be clear when you read up on the knit-
+tingpatterns class. It is already available with the MacTeX
+distributions, and of course, online on Overleaf. If your distri-
+bution does not offer it, download it from here and copy the .cls
+file to the folder/directory your code is in. See the point where
+stuff becomes exponentially harder to do without L A TEX? Wedaresay the rest of this assignment crosses that point. Good
+luck!}
+\newpage
+
+\end{document}
